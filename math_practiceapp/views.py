@@ -1,7 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.http import HttpResponse
 
+# Create your views here.
+"""
 def home(request):
 
     return render(request, 'base.html', {})
+"""
+
+def index(request):
+    return HttpResponse("Welcome to Math Practice!!!")
